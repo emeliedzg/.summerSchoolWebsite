@@ -1,0 +1,295 @@
+<style>
+body{  
+font-family: Arial;
+}
+    
+ul.topNav {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background-color:gold;
+    overflow: hidden;
+}
+ul.topNav li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: inline-start;
+   
+}
+ul.topNav li last-child a{
+    border-right: none;
+}
+
+
+ul.topNav li a.active {
+    background-color:rgb(255,199,15);
+}
+ul.topNav li a:hover{
+    background-color:rgb(24, 23, 23);
+}
+h4{
+margin-left: 8px;
+
+}
+
+form {
+    border-radius:5px;
+    padding:7px 10px;
+margin: 0px;
+background-color:#e5e5e5 ;
+display: block;
+}
+label{
+    padding: 3px;
+    display: flexbox;}
+
+input[type=text],[type=email],[type=tel],[type=number],button ,select{
+    width: 95%;
+    padding:10px;
+    margin:8px 0px;
+    display:inline-box;
+border:1px solid #ccc;
+border-radius:4px;
+box-sizing: border-box;
+transition: 0.1s;
+outline: none;
+
+}
+input[type=text]:focus {
+  border: 4px solid rgba(251, 230, 86, 0.824);
+
+}
+input[type=number]:focus {
+  border: 4px solid rgba(251, 230, 86, 0.824);
+}
+input[type=email]:focus {
+  border: 4px solid rgba(251, 230, 86, 0.824);
+}
+input[type=tel]:focus {
+  border: 4px solid rgba(251, 230, 86, 0.824);
+}
+
+select{
+cursor: pointer;
+}
+select:focus{
+    cursor:pointer;
+    border: 4px solid rgba(251, 230, 86, 0.82) ;
+}
+
+
+button{
+width: 95%;
+background-color: rgb(248, 221, 21);
+color:black;
+padding:12px;
+margin:8px 0px;
+border:none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: rgb(238, 203, 4);
+}
+button:hover {
+  background-color: rgb(238, 203, 4);
+}
+
+textarea{
+    width: 95%;
+    height: 100px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    outline: none;
+    font-family: Arial;
+}
+
+textarea:focus {
+  border: 4px solid rgba(251, 230, 86, 0.824);
+}
+
+#ausgabe{
+    display: none;
+    background-color: #e5e5e5;
+    border-radius: 4px;
+   padding: 10px;
+    margin: 10px 0px;
+    
+}
+
+footer{
+    padding: 1px 15px;
+    background-color: rgb(255,253,231);
+    text-align: center;
+}
+
+</style>
+<body>
+<header> 
+    <img src= "Header4.png" style="width: 100%;height: auto;">
+
+
+
+<ul class="topNav">
+     <li><a href="Startseite.html" for ="Startseite">Startseite</a></li>
+    <li><a href="Anmeldung.html" class="active">Anmeldung</a></li>
+     <li><a href="Spielplan.html">Spielplan </a></li>
+      <li><a href="Kontakt.html">Kontakt</a></li>
+</ul>
+</header>
+<h4>Nochmal die wichtigsten Infos</h4>
+<ul>
+<li> 
+<strong>Datum:</strong>
+ 29.-30. August 2026
+</li>
+<li>
+<strong>Ort:</strong>
+DFH Asselbachstraße 53842 Troisdorf
+</li>
+<li>
+<strong>Startgebühr:</strong>
+ 140€ + 50€ Kaution*
+<br> Die Anmeldung wird mit eingehen der Startgeühr verbindlich 
+</li>
+
+    
+
+</ul>
+</p>
+ <h4> Anmeldung</h4> 
+<form id="formular"> 
+<label for= "Teamname">Teamname:</label> 
+<br>
+<input type="text" id="teamname" required placeholder="Pflicht" > 
+<br>
+<label for= "verein">Verein:</label>
+<br> <input type="text" id="Verein" placeholder="Optional"> 
+<br>
+<label for="aSpieler"> Anzahl der Spieler </label> 
+<br>
+<input type="number" id=" aSpieler" required placeholder="Pflicht" >
+<br>
+
+
+<label for="Liga">Liga</label>
+<br>
+  <select id="Liga" name="Liga" required>
+    <option value="D BK">Damen Bezirksklasse</option>
+    <option value="D BL">Damen Bezirksliga</option>
+    <option value="D LL">Damen Landesliga</option>
+    <option value="H LL">Herren Landesliga </option>
+    <option value="H VL">Herren Verbandsliga </option>
+    <option value="H OL">Herren Oberliga </option>
+  </select> <br> <br>
+
+<b>Kontaktperson:</b>
+<br>
+<label >Vor- und Nachname:</label> 
+<br>
+<input type="text" id="Kontaktperson" required placeholder="Pflicht" > 
+<br>
+<label for= "Email">Email:</label>
+<br> <input type="email" id="email" required placeholder="Pflicht" >
+<br>
+<label for= "tel">Telefon:</label>
+<br> <input type="tel" id="tel" required placeholder="Pflicht" >
+<br>
+<br>
+Wir überweisen die Startgebühr in höhe von 140€ + 50€ Kaution (diese bekommt ihr im Anschluss an das Turnier zurück)
+an:
+<br>
+
+<br> 1.FC Spich 1911 e.V <br>
+IBAN:DE12 3456 7891 2345 6789 12
+<br>
+BIC: GE ABCDEFGHIJ <br>
+
+<br>
+
+Verwendungszweck: Spicher Open 2026, Teamname/Ansprechpartner
+ <br>
+<br>
+<label for="kommentar">Kommentar:</label>
+<br>
+    <textarea id="kommentar" name="kommentar" placeholder="Optional"></textarea>
+
+
+
+
+<button type="submit">Anmelden</button>
+ 
+  
+
+</form>
+
+<p id="ausgabe"> </p>
+
+
+
+<br>
+<strong>*Regelung zum Rücktritt: </strong></li>
+<ul>
+<li><ins>Bis zwei Monate vor Turnierbeginn:</ins>
+     Das volle Startgeld zurück. Sollte das Turnier voll besetzt sein, wird der Mannschaft auch die komplette Kaution nachträglich erstattet.
+ </li>
+<li><ins>Bis einen Monat vor Turnierbeginn:</ins>
+     Mannschaft erhält das volle Startgeld zurück. Die Kaution wird einbehalten.
+</li>
+<li><ins> Weniger als einen Monat vor Turnierbeginn:</ins>
+    Startgeld und Kaution werden einbehalten
+</li>
+</ul>
+
+<footer>
+<p><sub>
+Dies ist keine offizielle Seite des 1. FC Spich  
+<br> 
+Es handelt sich bei dieser Website um ein Uniprojekt 
+<br>
+Die verwendeten Daten sind lediglich Beispiele 
+<br>
+
+Turnieranmeldung sowie verbindliche Informationen zum Spicher Open gibt es nur auf der offiziellen Website <a href="https://www.fc-spich.de">www.fc-spich.de</a>
+
+</sub>
+</p>
+</footer>
+
+
+</body>
+
+
+
+<script> 
+    function myFunction(){
+      const emailt = document.getElementById("email").value;
+       // alert("")
+        document.getElementById("output").textContent = "Danke für eure Anmenldung, wir haben ein Bestätigungsemail mit weiteren Infos an "+emailt+" gesendet!"<br> "Wir freuen uns auf euch! "<br> "Euer Orgateam";
+    }
+
+    
+
+
+    
+const formular = document.getElementById("formular");
+
+formular.addEventListener("submit",
+ function(event) {
+    event.preventDefault(); // Verhindert das Neuladen der Seite
+
+    const email = document.getElementById("email").value;
+    document.getElementById("ausgabe").style.display="block";
+    document.getElementById("ausgabe").innerHTML =
+      "Danke für eure Anmeldung! <br>Wir haben eine Bestätigungsmail an "+email+" gesendet. <br> Wir freuen uns auf euch!";
+});
+
+
+</script>
