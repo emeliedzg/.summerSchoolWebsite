@@ -1,9 +1,10 @@
-<style>
+<meta charset="UTF-8" content="width=device-width, initial-scale=2.0">
 
+<style>
 
 body{  
 font-family: Arial;
-
+font-size: 1.1rem;
 }
     
 ul.topNav {
@@ -12,6 +13,7 @@ ul.topNav {
     padding:0;
     background-color:gold;
     overflow: hidden;
+    font-size: 1.1rem;
 }
 ul.topNav li a{
     display: block;
@@ -24,12 +26,14 @@ ul.topNav li a{
 ul.topNav li last-child a{
     border-right: none;
 }
+ul.topNav li a:hover{
+    color: gold;
+    background-color:rgb(46, 37, 10);
+}
 
 ul.topNav li a.active {
-    background-color:rgb(205,170,3);
-}
-ul.topNav li a:hover{
-    background-color:rgb(205,170,3);
+    color: white;
+    background-color:rgb(255,200,15);
 }
 footer{
     padding: 1px 15px;
@@ -37,14 +41,15 @@ footer{
     text-align: center;
 }
 
-
-
-
 table, th,td{
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
 margin: 5px;
+}
+
+table{
+    margin:auto;
 }
 
 th{ 
@@ -59,6 +64,10 @@ td:hover {
     cursor: default;
 }
 
+p{
+    font-size: 1.1rem;
+}
+
 </style>
 
 
@@ -66,13 +75,15 @@ td:hover {
 <header> 
     <img src= "Header4.png" style="width: 100%;height: auto;">
 </header>
-
+<nav>
 <ul class="topNav">
-     <li><a href="Startseite.html" >Startseite</a></li>
+     <li><a href="index.html" >Startseite</a></li>
     <li><a href="Anmeldung.html">Anmeldung</a></li>
      <li><a href="Spielplan.html" class="active">Spielplan </a></li>
       <li><a href="Kontakt.html">Kontakt</a></li>
 </ul>
+</nav>
+<main>
 <br><br>
 <br>
 <h4>Angemeldete Mannschaften</h4>
@@ -88,9 +99,10 @@ td:hover {
    
 </tr>
 <tr> <td>Rheingold Zündorf</td>
-    <td> Rheingold Zündorf</td>
+    <td> </td>
 </tr>
 </table>   
+</main>
 <footer>
 <p><sub>
 Dies ist keine offizielle Seite des 1. FC Spich  
@@ -99,9 +111,7 @@ Es handelt sich bei dieser Website um ein Uniprojekt
 <br>
 Die verwendeten Daten sind lediglich Beispiele 
 <br>
-
 Turnieranmeldung sowie verbindliche Informationen zum Spicher Open gibt es nur auf der offiziellen Website <a href="https://www.fc-spich.de">www.fc-spich.de</a>
-
 </sub>
 </p>
 </footer> 
